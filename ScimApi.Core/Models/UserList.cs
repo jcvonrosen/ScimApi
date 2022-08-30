@@ -1,4 +1,4 @@
-﻿namespace ScimApi.Models
+﻿namespace ScimApi.Core.Models
 {
     public class UserList : ResourceList
     {

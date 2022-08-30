@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData.Query;
-using ScimApi.Models;
+using ScimApi.Core.Models;
 using System.Linq;
 
 namespace ScimApi.Controllers
@@ -41,6 +41,30 @@ namespace ScimApi.Controllers
             list.StartIndex = 1;
             list.Resources = results;
             return Ok(list);
+        }
+
+        [HttpPost]
+        public ActionResult CreateUser()
+        {
+            return Ok();
+        }
+
+        [HttpPut]
+        public ActionResult ReplaceUser()
+        {
+            return Ok();
+        }
+
+        [HttpPatch]
+        public ActionResult UpdateUser()
+        {
+            return Ok();
+        }
+
+        [HttpDelete]
+        public ActionResult DeleteUser()
+        {
+            return Ok();
         }
     }
 }

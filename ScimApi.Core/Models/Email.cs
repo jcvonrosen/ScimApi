@@ -1,8 +1,9 @@
-﻿namespace ScimApi.Models
+﻿namespace ScimApi.Core.Models
 {
-    public class PhoneNumber
+    public class Email
     {
         public string Value { get; set; }
         public string Type { get; set; }
+        public bool Primary { get; set; }
     }
 }
