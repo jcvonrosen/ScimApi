@@ -18,6 +18,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// Using suggested base URL recommended by Okta
+app.UsePathBase("/scim/v2");
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
