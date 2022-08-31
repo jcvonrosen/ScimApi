@@ -47,13 +47,13 @@ public class UsersControllerTests
     }
 
     [TestMethod]
-    public void CreateUserReturnsUser()
+    public async Task CreateUserReturnsUser()
     {
         // Arrange
         var controller = new UsersController(_logger);
 
         // Act
-        var data = controller.CreateUser();
+        var data = await controller.CreateUser();
 
         // Assert
         Assert.IsInstanceOfType(data, typeof(OkObjectResult), $"return should be of type OkObjectResult but is actually type '{data.GetType().Name}'.");
