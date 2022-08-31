@@ -46,7 +46,7 @@ namespace ScimApi.Controllers
         [HttpPost]
         public ActionResult CreateUser()
         {
-            return Ok();
+            return Ok(new User());
         }
 
         [HttpPut]
