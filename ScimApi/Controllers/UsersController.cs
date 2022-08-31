@@ -6,7 +6,7 @@ using System.Linq;
 namespace ScimApi.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("scim/v2/[controller]")]
     public class UsersController : ControllerBase
     {
 
