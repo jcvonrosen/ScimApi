@@ -44,9 +44,10 @@ namespace ScimApi.Controllers
         }
 
         [HttpPost]
-        public ActionResult CreateUser()
+        public async Task<ActionResult> CreateUser()
         {
-            return Ok();
+            var newUser = await Task.FromResult(new User());
+            return Ok(newUser);
         }
 
         [HttpPut]
